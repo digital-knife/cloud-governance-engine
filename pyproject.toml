@@ -1,0 +1,18 @@
+[project]
+name = "cloud-governance-engine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.42.50",
+    "pydantic>=2.12.5",
+]
+
+[dependency-groups]
+dev = [
+    "moto>=5.1.21",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.15.1",
+]
