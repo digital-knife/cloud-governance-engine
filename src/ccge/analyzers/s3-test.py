@@ -14,7 +14,7 @@ try:
     for bucket in response["Buckets"]:
         bucket_names.append(bucket["Name"])
 except Exception as e:
-    print(f"No credentials detected or error is {e})")
+    print(f"No credentials detected or error is {e}")
 
 
 def check_public_access(bucket):
